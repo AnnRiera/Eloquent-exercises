@@ -3,19 +3,19 @@ function chessBoard(size) {
         throw new Error('Size var must be a number');
     }
 
-    let xColumn = '';
+    let str = '';
 
     for (let yAxis = 1; yAxis <= size; yAxis++) {
         for (let xAxis = 1; xAxis <= size; xAxis++) {
             if ((xAxis + yAxis) % 2 === 0) {
-                xColumn += ' ';
+                str += ' ';
             } else {
-                xColumn += '#';
+                str += '#';
             }
         }
-        xColumn += '\n';
+        str += '\n';
     }
-    console.log(xColumn);
+    console.log(str);
 }
 
 chessBoard(8,8);
