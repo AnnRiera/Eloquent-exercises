@@ -20,7 +20,7 @@ function rangeModified(init, end, step) {
     return arr;
 }
 
-function add(arr) {
+function addOldFashionWay(arr) {
     let value = 0;
     for (let number of arr) {
         value += number;
@@ -28,6 +28,12 @@ function add(arr) {
     return value;
 }
 
+function addWithReduce(arr) {
+    return arr.reduce((current, index) => current + index, 0);
+}
+
+const arr = [1,2,3,4,5,6,7,8,9,10];
 console.log(range(1,10))
-console.log(add([1,2,3,4,5,6,7,8,9,10]))
+console.log(addOldFashionWay(arr))
 console.log(rangeModified(5, 2, -1));
+console.log(addWithReduce(arr))

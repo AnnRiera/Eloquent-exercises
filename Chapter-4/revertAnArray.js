@@ -1,3 +1,5 @@
+const arr = [2,4,6,8,10];
+
 function reverteArray(arr) {
     const newArray = [];
     for (let i = arr.length; i > 0; i--) {
@@ -6,7 +8,7 @@ function reverteArray(arr) {
     return newArray;
 }
 
-console.log(reverteArray([2,4,6,8,10]));
+console.log(reverteArray(arr));
 
 function revertArrayInItsPlace(arr) {
     const newArray = [];
@@ -21,4 +23,4 @@ function revertArrayInItsPlace(arr) {
     return arr;
 }
 
-console.log(revertArrayInItsPlace([2,4,6,8,10]));
+console.log(revertArrayInItsPlace(arr));
